@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payments</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Payments</h1>
+</div>
+
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/events">Events</a>
+    <a href="/register">Register</a>
+    <a href="/participants">Participants</a>
+</div>
+
+<!-- WHITE SECTION -->
+<div class="section">
+
+    <div class="count">
+        Total Payments: {{ payments|length }}
+    </div>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Status</th>
+               
+            </tr>
+
+            {% for p in payments %}
+            <tr>
+                <td>{{ p[0] }}</td>
+                <td>{{ p[1] }}</td>
+                <td>{{ p[2] }}</td>
+               
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

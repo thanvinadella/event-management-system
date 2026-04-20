@@ -1,0 +1,30 @@
+<body>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div class="header">
+    <h1>Events</h1>
+</div>
+
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/register">Register</a>
+    <a href="/participants">Participants</a>
+    <a href="/payments">Payments</a>
+</div>
+
+<div class="section">
+    <div class="events-container">
+
+        {% for event in events %}
+        <div class="card">
+            <h3>{{ event[1] }}</h3>
+            <p><b>Date:</b> {{ event[2] }}</p>
+            <p><b>Type:</b> {{ event[3] }}</p>
+            <p><b>Venue:</b> {{ event[4] }}</p>
+            <p><strong>Organizer:</strong> {{ event[5] }}</p>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+</body>

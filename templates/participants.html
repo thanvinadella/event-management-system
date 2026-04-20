@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Participants</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Participants</h1>
+</div>
+
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/events">Events</a>
+    <a href="/register">Register</a>
+    <a href="/payments">Payments</a>
+</div>
+
+<!-- WHITE SECTION -->
+<div class="section">
+
+    <div class="count">
+        Total Participants: {{ participants|length }}
+    </div>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Event</th>
+                
+            </tr>
+
+            {% for p in participants %}
+            <tr>
+                <td>{{ p[0] }}</td>
+                <td>{{ p[1] }}</td>
+                <td>{{ p[2] }}</td>
+                <td>{{ p[3] }}</td>
+               
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

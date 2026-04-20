@@ -1,0 +1,219 @@
+/* ================= RESET ================= */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e8f5e9, #ffffff);
+}
+
+/* ================= HEADER ================= */
+.header {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-bottom: 2px solid #2e7d32;
+}
+
+.header h1 {
+    color: #2e7d32;
+}
+
+.logo {
+    width: 220px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: #2e7d32;
+    padding: 12px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #c8e6c9;
+}
+
+/* ================= HERO ================= */
+.hero {
+    min-height: 90vh;
+    background: url("/static/srm_bg.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+/* LIGHT OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+}
+
+/* HERO CONTENT */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn {
+    background: #2e7d32;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #1b5e20;
+}
+
+/* ================= EVENTS ================= */
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.95);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
+    width: 260px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-left: 5px solid #2e7d32;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ================= REGISTER ================= */
+.form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border-top: 5px solid #2e7d32;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.form-box h2 {
+    color: #2e7d32;
+}
+
+/* INPUTS */
+.form-box input,
+.form-box select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.form-box button {
+    background: #2e7d32;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.form-box button:hover {
+    background: #1b5e20;
+}
+
+/* ================= PARTICIPANTS TABLE ================= */
+.table-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border-top: 5px solid #2e7d32;
+    position: relative;
+    z-index: 2;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #2e7d32;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+/* COUNT TEXT */
+.count {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2e7d32;
+}
+/* CLEAN WHITE SECTION (NO IMAGE) */
+.section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FIX FORM CENTER */
+.form-box {
+    margin-top: 20px;
+}
+.section {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
