@@ -61,4 +61,4 @@ http://localhost:5001
 ---
 
 ## 🎯 Objective
-To develop a database-driven system that simplifies event management and ensures efficient storage, retrieval, and management of event-related data.
+To develop a database-driven system that simplifies event management and ensures efficient storage, retrieval, and management of event-related data. 
